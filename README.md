@@ -8,7 +8,7 @@ This repository provides tools to detect pump-and-dump signals in cryptocurrency
 • Provide high-resolution labeling and features for machine learning models.
 • Integrate multiple data sources: news (CoinDesk), tweets, and OHLCV trading data.
 
-🔹 Key Components
+🔹 Key Components 
 
 - CoinDesk Article Crawler:
 • Fetches crypto news with title, content, and exact publication time
