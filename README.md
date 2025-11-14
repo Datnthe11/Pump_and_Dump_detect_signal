@@ -25,7 +25,7 @@ This repository provides tools to detect pump-and-dump signals in cryptocurrency
 • Provides helper metrics to explain labels
 
 - Data Integration:
-• Combine news, tweets, and labeled trading data
+• Combine news, tweets, and labeled Bitcoin trading data
 • Create features for ML models (e.g., LightGBM) using embeddings from a BiLSTM + Attention feature extractor
 • Enable hybrid analysis of social media and market signals
 
