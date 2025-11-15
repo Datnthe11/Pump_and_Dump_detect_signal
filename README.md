@@ -1,6 +1,6 @@
 Crypto Pump-and-Dump Signal Detection Toolkit
 
-This repository provides tools to detect pump-and-dump signals in cryptocurrency markets by combining news articles, social media activity, and trading data.
+This repository provides how to crawl data, build models to detect pump-and-dump signals in cryptocurrency markets by combining news articles, social media activity, and trading data.
 
 🔹 Main Goal
 
