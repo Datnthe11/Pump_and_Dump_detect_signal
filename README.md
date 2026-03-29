@@ -1,36 +1,57 @@
-Crypto Pump-and-Dump Signal Detection Toolkit
+# Crypto Pump-and-Dump Signal Detection Toolkit
 
-This repository provides how to crawl data, build models to detect pump-and-dump signals in cryptocurrency markets by combining news articles, social media activity, and trading data.
+## 🚀 Overview
+A machine learning system for detecting short-term pump-and-dump events in cryptocurrency markets by integrating news articles, social media signals, and trading data.
 
-🔹 Main Goal
+The project focuses on multi-modal feature engineering and high-resolution event labeling to improve detection of abnormal market movements.
 
-• Detect short-term pump and dump events in crypto markets.
-• Provide high-resolution labeling and features for machine learning models.
-• Integrate multiple data sources: news (CoinDesk), tweets, and OHLCV trading data.
+---
 
-🔹 Key Components 
+## 🎯 Objectives
+- Detect short-term pump-and-dump patterns in crypto markets  
+- Build high-resolution labeled datasets for machine learning models  
+- Combine textual sentiment (news, tweets) with market signals (OHLCV)  
 
-- CoinDesk Article Crawler:
-• Fetches crypto news with title, content, and exact publication time
-• Optional login for paywalled content
+---
 
-- Twitter/X Scraper:
-• Collect tweets related to crypto hype
-• Filter by keywords, engagement, and language
-• Generate social media features for pump-and-dump analysis
+## 🧱 System Architecture
 
-- OHLCV Pump/Dump Labeling:
-• Label minute-level trading data as pump, dump, or neutral
-• Configurable price and volume thresholds
-• Provides helper metrics to explain labels
+### 1. Data Collection
+- Crawl crypto news from CoinDesk (timestamp-aligned)  
+- Scrape Twitter/X data with keyword and engagement filtering  
+- Collect OHLCV trading data at minute-level resolution  
 
-- Data Integration:
-• Combine news, tweets, and labeled Bitcoin trading data
-• Create features for ML models (e.g., LightGBM) using embeddings from a BiLSTM + Attention feature extractor
-• Enable hybrid analysis of social media and market signals
+### 2. Labeling Pipeline
+- Generate pump / dump / neutral labels based on price and volume thresholds  
+- Provide interpretable metrics to support labeling decisions  
 
-🔹 Who Should Use This Repo
+### 3. Feature Engineering
+- Extract text embeddings using BiLSTM + Attention  
+- Combine with market indicators (price, volume, volatility)  
+- Construct multi-modal feature sets  
 
-• Crypto analysts and researchers studying pump-and-dump schemes
-• Developers building predictive models for short-term market movements
-• Anyone interested in linking social sentiment and trading behavior
+### 4. Modeling
+- Train machine learning models (e.g., LightGBM) for event detection  
+- Evaluate model performance on labeled data  
+
+---
+
+## 🛠️ Tech Stack
+- **Language:** Python  
+- **ML/DL:** PyTorch (BiLSTM + Attention), LightGBM  
+- **Data:** NLP, Time-series analysis  
+- **Pipeline:** Data crawling, feature engineering, labeling system  
+
+---
+
+## 📊 Key Highlights
+- Built an end-to-end ML pipeline from raw data collection to model training  
+- Designed a high-resolution labeling framework for financial time-series data  
+- Developed multi-modal features combining social sentiment and market signals  
+
+---
+
+## 📌 Repository Purpose
+This repository is developed for research and portfolio purposes, demonstrating practical applications of machine learning in financial market analysis.
+
+---
